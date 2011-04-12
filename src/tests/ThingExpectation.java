@@ -11,14 +11,13 @@ import work.IThing;
  * Time: 10:08
  * To change this template use File | Settings | File Templates.
  */
-public class ThingExpectation extends NonStrictExpectations{
+final public class ThingExpectation extends NonStrictExpectations{
 
     @NonStrict IThing mockThing;
 
     public ThingExpectation() {
         {
-            mockThing.jiggery();
-            returns("stuff");
+            mockThing.jiggery(); result = "stuff";
         }
     }
 }
